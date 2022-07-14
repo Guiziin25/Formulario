@@ -1,0 +1,150 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Pesquisa Automobilistica</h1>
+    <p id="description" class="description text-center"> Obrigado por tirar seu tempo para ajudar em nossa pesquisa! </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nome</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Coloque seu Nome"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Coloque seu Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Idade<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Idade"
+      />
+    </div>
+    <div class="form-group">
+      <p>Qual tipo de automóvel você mais gosta?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Selecione uma opção</option>
+        <option value="carro">Carro</option>
+        <option value="moto">Moto</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Você recomendaria algum carro para seu amigo?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="sim"
+          type="radio"
+          class="input-radio"
+          checked
+        />Sim</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="talvez"
+          type="radio"
+          class="input-radio"
+        />Talvez</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Nao"
+          type="radio"
+          class="input-radio"
+        />Não</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+       Por quê você queria um automóvel?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Escolha uma opção</option>
+        <option value="viajar">Viajar</option>
+        <option value="passeio">Passeio</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Qual parte você mais prefere no carro?
+        <span class="clue">(Verifique todas as aplicações)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="pneu"
+          type="checkbox"
+          class="input-checkbox"
+        />Pneu</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="porta"
+          type="checkbox"
+          class="input-checkbox"
+        />Porta</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="motor"
+          type="checkbox"
+          class="input-checkbox"
+        />Motor</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Banco"
+          type="checkbox"
+          class="input-checkbox"
+        />Banco</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Algum comentário ou sugestão?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Coloque seu comentário aqui..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
